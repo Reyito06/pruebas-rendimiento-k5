@@ -1,0 +1,64 @@
+# PROYECTO DE PRUEBAS DE RENDIMIENTO
+
+## 1. Introduccion
+
+Este proyecto consiste en realizar pruebas de rendimiento
+sobre una API de gestion de estudiantes utilizando k6.
+
+## 2. Objetivo
+
+Evaluar el comportamiento de la API cuando recibe
+multiples solicitudes de usuarios virtuales.
+
+## 3. Herramientas utilizadas
+
+- Node.js
+- JavaScript
+- Grafana k6
+- API REST
+- JSON
+- GitHub
+
+## 4. Aplicacion seleccionada
+
+Se desarrollo una API propia para consultar estudiantes.
+
+Direccion:
+http://localhost:3000/api/estudiantes
+
+## 5. Configuracion de la prueba
+
+- 5 usuarios durante 10 segundos.
+- 10 usuarios durante 20 segundos.
+- 20 usuarios durante 30 segundos.
+- Reduccion a 0 usuarios durante 10 segundos.
+
+## 6. Indicadores evaluados
+
+- Tiempo de respuesta.
+- Cantidad de solicitudes.
+- Porcentaje de errores.
+- Usuarios virtuales.
+- Comprobaciones de respuesta.
+
+## 7. Ejecucion
+
+Iniciar la API:
+
+node server.js
+
+Ejecutar la prueba:
+
+k6 run prueba-rendimiento.js
+
+## 8. Resultados
+
+El reporte se genera en:
+
+resultados/reporte.json
+
+## 9. Conclusion
+
+Las pruebas de rendimiento permiten evaluar
+la capacidad de respuesta de una API ante
+multiples solicitudes.
